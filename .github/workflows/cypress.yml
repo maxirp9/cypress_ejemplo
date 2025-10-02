@@ -23,3 +23,12 @@ jobs:
 
       - name: Ejecutar Cypress
         run: npm run cypress:run
+
+      - name: Subir artefactos de Cypress
+        if: always()   # asegura que se suba aunque los tests fallen
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-artifacts
+          path: |
+            cypress/videos/
+            cypress/screenshots/

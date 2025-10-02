@@ -20,7 +20,7 @@ describe('ejemplos login', () => {
         cy.get('.titulo11').contains('Bienvenido')
     })
 
-    it('login fallido', () => {
+    it('login fallido OK', () => {
         const password = Cypress.env('password')
 
         cy.get('#c1').type('admin')

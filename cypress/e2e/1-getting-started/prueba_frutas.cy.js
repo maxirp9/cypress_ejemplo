@@ -14,18 +14,18 @@ describe('ejemplos frutas', () => {
         cy.get('#titulo').contains('Ejemplo')
     })
 
-    it('busqueda fallida', () => {
+    it('busqueda fallida de "fruta" en pagina principal', () => {
         
         cy.get('#titulo').contains('fruta')
     })
 
-    it('navegacion exitosa', () => { 
+    it('busqueda exitosa de "Manzana" en el listado de frutas', () => { 
 
         cy.get('#link').click()        
         cy.get('#listado_frutas').contains('Manzana')
     })
 
-    it('navegacion fallida', () => { 
+    it('busqueda fallida de "Pera" en el listado de frutas', () => { 
 
         cy.get('#link').click()        
         cy.get('#listado_frutas').contains('Pera')
