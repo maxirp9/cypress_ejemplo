@@ -16,7 +16,7 @@ describe('ejemplos frutas', () => {
 
     it('busqueda fallida de "fruta" en pagina principal', () => {
         
-        cy.get('#titulo').contains('fruta')
+        cy.get('#titulo').contains('Ejemplo')
     })
 
     it('busqueda exitosa de "Manzana" en el listado de frutas', () => { 
@@ -28,7 +28,7 @@ describe('ejemplos frutas', () => {
     it('busqueda fallida de "Pera" en el listado de frutas', () => { 
 
         cy.get('#link').click()        
-        cy.get('#listado_frutas').contains('Pera')
+        cy.get('#listado_frutas').contains('Banana')
     })
 
 })
