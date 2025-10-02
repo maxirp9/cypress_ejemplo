@@ -34,7 +34,7 @@ describe('ejemplos login', () => {
         const password = Cypress.env('password')
 
         cy.get('#c1').type('maximilinano')
-        cy.get('#c1').contains('Incorrectos')
+        cy.get('#c1').contains('juan')
     })
 
 })
